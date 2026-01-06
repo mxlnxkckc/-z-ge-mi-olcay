@@ -148,3 +148,29 @@ body {
         font-size: 1.5rem;
     }
 }
+/* CV Resmi İçin Ayarlar */
+.cv-image {
+    width: 100%;       /* Kutunun genişliğine uyar */
+    max-width: 800px;  /* Çok devasa olmasını engeller */
+    height: auto;      /* Oranını korur */
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2); /* Hafif gölge */
+    border: 1px solid #ddd;
+}
+
+/* İndirme Butonu Stili */
+.download-btn {
+    display: inline-block;
+    background-color: var(--accent);
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.download-btn:hover {
+    background-color: var(--accent-hover);
+    transform: translateY(-2px);
+}
