@@ -1,0 +1,150 @@
+/* Genel Ayarlar */
+:root {
+    --bg-color: #e2e2e2; /* Arka plan grisi */
+    --card-bg: #f4f4f9;  /* Kart rengi */
+    --text-dark: #333;
+    --text-light: #666;
+    --link-hover: #555;
+    --accent: #d43f4e; /* Vurgu rengi (kırmızımsı) */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Ana Kutu (Container) Stili */
+.container {
+    background-color: var(--card-bg);
+    padding: 50px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 800px;
+}
+
+/* Linkler ve Navigasyon */
+.main-nav a {
+    text-decoration: none;
+    color: var(--text-dark);
+    font-weight: bold;
+    margin-right: 25px;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+    transition: color 0.3s ease;
+}
+
+.main-nav a:hover {
+    color: var(--link-hover);
+    text-decoration: underline;
+}
+
+.main-header {
+    margin-bottom: 50px;
+}
+
+/* Ana Sayfa İçerik */
+.main-title {
+    font-size: 2.8rem;
+    color: #222;
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+
+.main-description {
+    font-size: 1.15rem;
+    line-height: 1.6;
+    color: var(--text-light);
+    margin-bottom: 70px;
+    max-width: 95%;
+}
+
+/* Sosyal Medya İkonları */
+.social-footer {
+    display: flex;
+    gap: 25px;
+}
+
+.social-link {
+    color: #444;
+    font-size: 2rem;
+    text-decoration: none;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-link:hover {
+    color: #000;
+    transform: translateY(-3px); /* Üzerine gelince hafif zıplar */
+}
+
+/* Hakkında Sayfası Özellikleri */
+.back-link {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--accent);
+    font-weight: bold;
+    margin-bottom: 30px;
+    font-size: 0.9rem;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+.about-title {
+    font-size: 2rem;
+    margin-bottom: 25px;
+    color: #222;
+    text-transform: uppercase;
+}
+
+.about-content {
+    line-height: 1.7;
+}
+
+.about-content p {
+    margin-bottom: 15px;
+    color: #444;
+    text-transform: uppercase; /* Tüm metni büyük harf yapar */
+    font-size: 0.95rem;
+}
+
+.contact-info {
+    margin-top: 40px;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+.contact-info h3 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+/* Mobil Uyumluluk */
+@media (max-width: 600px) {
+    .container {
+        padding: 30px;
+    }
+    .main-title {
+        font-size: 2rem;
+    }
+    .main-description {
+        font-size: 1rem;
+        margin-bottom: 40px;
+    }
+    .about-title {
+        font-size: 1.5rem;
+    }
+}
